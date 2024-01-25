@@ -23,6 +23,8 @@ jobs:
       uses: azure/login@v1
       with:
         creds: ${{ secrets.OneCardManagedEnv_SPN }}
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v4.0.1
     - name: Container App deploy
       uses: azure/container-apps-deploy-action@v1
       with:
