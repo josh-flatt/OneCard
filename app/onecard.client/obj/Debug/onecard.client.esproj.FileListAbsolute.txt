@@ -1,0 +1,1 @@
+C:\Repositories\OneCard\app\onecard.client\obj\Debug\onecard.client.esproj.CoreCompileInputs.cache
