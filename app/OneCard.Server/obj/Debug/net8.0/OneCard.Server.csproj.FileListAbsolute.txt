@@ -6,8 +6,10 @@ C:\Repositories\OneCard\app\OneCard.Server\bin\Debug\net8.0\OneCard.Server.deps.
 C:\Repositories\OneCard\app\OneCard.Server\bin\Debug\net8.0\OneCard.Server.runtimeconfig.json
 C:\Repositories\OneCard\app\OneCard.Server\bin\Debug\net8.0\OneCard.Server.dll
 C:\Repositories\OneCard\app\OneCard.Server\bin\Debug\net8.0\OneCard.Server.pdb
+C:\Repositories\OneCard\app\OneCard.Server\bin\Debug\net8.0\Microsoft.AspNetCore.NodeServices.dll
 C:\Repositories\OneCard\app\OneCard.Server\bin\Debug\net8.0\Microsoft.AspNetCore.SpaProxy.dll
 C:\Repositories\OneCard\app\OneCard.Server\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Repositories\OneCard\app\OneCard.Server\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Repositories\OneCard\app\OneCard.Server\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Repositories\OneCard\app\OneCard.Server\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Repositories\OneCard\app\OneCard.Server\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -34,5 +36,3 @@ C:\Repositories\OneCard\app\OneCard.Server\obj\Debug\net8.0\refint\OneCard.Serve
 C:\Repositories\OneCard\app\OneCard.Server\obj\Debug\net8.0\OneCard.Server.pdb
 C:\Repositories\OneCard\app\OneCard.Server\obj\Debug\net8.0\OneCard.Server.genruntimeconfig.cache
 C:\Repositories\OneCard\app\OneCard.Server\obj\Debug\net8.0\ref\OneCard.Server.dll
-C:\Repositories\OneCard\app\OneCard.Server\bin\Debug\net8.0\Microsoft.AspNetCore.NodeServices.dll
-C:\Repositories\OneCard\app\OneCard.Server\bin\Debug\net8.0\Newtonsoft.Json.dll
