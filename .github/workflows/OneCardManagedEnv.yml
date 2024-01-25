@@ -15,6 +15,8 @@ jobs:
     steps:
     - name: Checkout source code
       uses: actions/checkout@v4
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v4.0.1
     - name: Setup .NET SDK
       uses: actions/setup-dotnet@v3
       with:
@@ -23,8 +25,7 @@ jobs:
       uses: azure/login@v1
       with:
         creds: ${{ secrets.OneCardManagedEnv_SPN }}
-    - name: Setup Node.js environment
-      uses: actions/setup-node@v4.0.1
+    
     - name: Container App deploy
       uses: azure/container-apps-deploy-action@v1
       with:
