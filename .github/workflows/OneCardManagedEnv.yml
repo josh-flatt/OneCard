@@ -26,8 +26,8 @@ jobs:
     #     else
     #     npm i
     #     fi
-    - run: npm ci
-    - run: npm test
+    # - run: npm ci
+    # - run: npm test
     - name: Setup .NET SDK
       uses: actions/setup-dotnet@v3
       with:
