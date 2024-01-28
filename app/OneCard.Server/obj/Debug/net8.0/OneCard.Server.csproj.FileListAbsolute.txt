@@ -36,3 +36,8 @@ C:\Repositories\OneCard\app\OneCard.Server\obj\Debug\net8.0\OneCard.Server.genru
 C:\Repositories\OneCard\app\OneCard.Server\obj\Debug\net8.0\ref\OneCard.Server.dll
 C:\Repositories\OneCard\app\OneCard.Server\bin\Debug\net8.0\Microsoft.AspNetCore.NodeServices.dll
 C:\Repositories\OneCard\app\OneCard.Server\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Repositories\OneCard\app\OneCard.Server\bin\Debug\net8.0\System.Web.Cors.dll
+C:\Repositories\OneCard\app\OneCard.Server\bin\Debug\net8.0\System.Net.Http.Formatting.dll
+C:\Repositories\OneCard\app\OneCard.Server\bin\Debug\net8.0\System.Web.Http.dll
+C:\Repositories\OneCard\app\OneCard.Server\bin\Debug\net8.0\System.Web.Http.Cors.dll
+C:\Repositories\OneCard\app\OneCard.Server\bin\Debug\net8.0\Newtonsoft.Json.Bson.dll
