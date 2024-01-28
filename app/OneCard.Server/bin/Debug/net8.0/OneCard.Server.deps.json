@@ -10,6 +10,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.NodeServices": "3.1.32",
           "Microsoft.AspNetCore.SpaProxy": "8.0.1",
+          "Node.js": "5.3.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {
@@ -111,6 +112,7 @@
           }
         }
       },
+      "Node.js/5.3.0": {},
       "Swashbuckle.AspNetCore/6.5.0": {
         "dependencies": {
           "Microsoft.Extensions.ApiDescription.Server": "6.0.5",
@@ -275,6 +277,13 @@
       "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
       "path": "newtonsoft.json/13.0.1",
       "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
+    },
+    "Node.js/5.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WebrKeV0cXE4TaYriZQfDRNO/UMYnlQgR/CrHEx4kLgiRsY6F0Ve2UVS7qDHQHAjj/KXo3ygJY6HDhf91hwJDw==",
+      "path": "node.js/5.3.0",
+      "hashPath": "node.js.5.3.0.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore/6.5.0": {
       "type": "package",
