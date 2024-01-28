@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OneCard.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+350042d1586943d2fa086b623de0e54be1624069")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e252c419b7b887886d7953371d5b90b02b1d6932")]
 [assembly: System.Reflection.AssemblyProductAttribute("OneCard.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OneCard.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
