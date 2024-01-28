@@ -34,3 +34,5 @@ C:\Repositories\OneCard\app\OneCard.Server\obj\Debug\net8.0\refint\OneCard.Serve
 C:\Repositories\OneCard\app\OneCard.Server\obj\Debug\net8.0\OneCard.Server.pdb
 C:\Repositories\OneCard\app\OneCard.Server\obj\Debug\net8.0\OneCard.Server.genruntimeconfig.cache
 C:\Repositories\OneCard\app\OneCard.Server\obj\Debug\net8.0\ref\OneCard.Server.dll
+C:\Repositories\OneCard\app\OneCard.Server\bin\Debug\net8.0\Microsoft.AspNetCore.NodeServices.dll
+C:\Repositories\OneCard\app\OneCard.Server\bin\Debug\net8.0\Newtonsoft.Json.dll
