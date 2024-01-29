@@ -9,7 +9,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddCors(options => options.AddPolicy(name: "SuperHeroOrigins",
     policy =>
     {
-        policy.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader();
+        // policy.WithOrigins("http://localhost:4200").AllowAnyMethod().AllowAnyHeader();
+        policy.WithOrigins("https://icy-mud-0d36f9210.4.azurestaticapps.net/").AllowAnyMethod().AllowAnyHeader();
     }));
 
 var app = builder.Build();
