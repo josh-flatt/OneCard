@@ -1,0 +1,6 @@
+@OneClient.server_HostAddress = http://localhost:5088
+
+GET {{OneClient.server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
