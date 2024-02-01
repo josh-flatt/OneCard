@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repositories\\OneCard\\app\\OneCard.server\\OneCard.server\\OneCard.server.csproj": {}
+    "C:\\repositories\\OneCard\\app\\OneCard.server\\OneCard.server\\OneCard.server.csproj": {}
   },
   "projects": {
-    "C:\\Repositories\\OneCard\\app\\OneCard.server\\OneCard.server\\OneCard.server.csproj": {
+    "C:\\repositories\\OneCard\\app\\OneCard.server\\OneCard.server\\OneCard.server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repositories\\OneCard\\app\\OneCard.server\\OneCard.server\\OneCard.server.csproj",
+        "projectUniqueName": "C:\\repositories\\OneCard\\app\\OneCard.server\\OneCard.server\\OneCard.server.csproj",
         "projectName": "OneCard.server",
-        "projectPath": "C:\\Repositories\\OneCard\\app\\OneCard.server\\OneCard.server\\OneCard.server.csproj",
+        "projectPath": "C:\\repositories\\OneCard\\app\\OneCard.server\\OneCard.server\\OneCard.server.csproj",
         "packagesPath": "C:\\Users\\joshm\\.nuget\\packages\\",
-        "outputPath": "C:\\Repositories\\OneCard\\app\\OneCard.server\\OneCard.server\\obj\\",
+        "outputPath": "C:\\repositories\\OneCard\\app\\OneCard.server\\OneCard.server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
