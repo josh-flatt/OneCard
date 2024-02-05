@@ -3,6 +3,7 @@
 Presented by the IT Crowd Team
 
 ## Members
+
 - Jon Baessler
 - Andrew Holmes
 - Josh Flatt
