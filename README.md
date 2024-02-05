@@ -1,2 +1,3 @@
 # OneCard
-Repository for Spring 2024 Senior Capstone Project 
+
+Repository for Spring 2024 Senior Capstone Project.
