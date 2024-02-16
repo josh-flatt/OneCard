@@ -1,42 +1,11 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Website Under Development</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin: 50px;
-    }
-
-    h1 {
-      color: #555;
-    }
-
-    p {
-      color: #777;
-    }
-  </style>
-</head>
-
-<body>
-  <h1>Website Under Development</h1>
-  <p>We apologize for the inconvenience, but our website is currently under development and is temporarily unavailable.
-    Please check back later.</p>
+<body class="bg-dark text-light">
+  <div class="container p-0">
+    <h1>OneCard</h1>
+    <app-toolbar></app-toolbar>
+  </div>
+  <div class="container p-1">
+    <div class="card bg-light text-dark p-5">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
 </body>
-
-</html> -->
-
-<h1>Angular Router Sample</h1>
-<nav>
-  <a class="button" routerLink="/crisis-list" routerLinkActive="activebutton" ariaCurrentWhenActive="page">
-    Crisis Center
-  </a> |
-  <a class="button" routerLink="/heroes-list" routerLinkActive="activebutton" ariaCurrentWhenActive="page">
-    Heroes
-  </a>
-</nav>
-<router-outlet></router-outlet>
