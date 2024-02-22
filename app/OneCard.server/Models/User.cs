@@ -12,21 +12,14 @@ namespace OneCard.server.Models
         // Relationships
         public int AccountId { get; set; }
         public Account Account { get; set; } = null!;
-
         public int CompanyId { get; set; }
         public Company Company { get; set; } = null!;
-
-        public int PhoneId { get; set; }
-        public List<Phone> Phones { get; } = [];
-
+        public ICollection<Phone> Phones { get; set; } = new List<Phone>();
         public int CardId { get; set; }
         public Card Card { get; set; } = null!;
-        
         public int EducationId { get; set; }
         public List<Education> Educations { get; } = [];
-
-        public int ResourceId { get; set; }
-        public List<Resource> Resources { get; } = [];
+        public ICollection<Resource> Resources { get; set; } = new List<Resource>();
 
 
         // Fields
