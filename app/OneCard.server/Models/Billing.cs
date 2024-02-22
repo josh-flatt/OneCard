@@ -7,7 +7,7 @@ namespace OneCard.server.Models
         // Keys
         [Key]
         public int BillingId { get; set; }
-        
+
         // Relationships
         public int AccountId { get; set; }
         public Account Account { get; set; } = null!;
@@ -15,9 +15,10 @@ namespace OneCard.server.Models
         public Subscription Subscription { get; set; } = null!;
 
         // Fields
-        public decimal BillingPrice { get; set; }
+        public decimal BillingPriceModifier { get; set; }
         public string? BillingInterval { get; set; }
-        public DateOnly? BillingRenewalDate { get; set; }
+        public DateOnly BillingInitialDate { get; set; }
+        public DateOnly? BillingNextDate { get; set; }
         public bool BillingExpired { get; set; }
     }
 }

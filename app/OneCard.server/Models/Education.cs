@@ -19,7 +19,7 @@ namespace OneCard.server.Models
         // Fields
         public string? EducationDescription { get; set; }
         public string EducationDegree { get; set; } = null!;
-        public string EducationMajor { get; set; } = null!;
+        public string? EducationMajor { get; set; } = null!;
         public string? EducationMinor { get; set; }
         public DateOnly EducationStartDate { get; set; }
         public DateOnly? EducationEndDate { get; set; }

@@ -17,12 +17,8 @@ namespace OneCard.server.Models
         public int PhoneId { get; set; }
 
         // Relationships
-        public int? UserId { get; set; }
-        public User? User { get; set; }
-        public int? CompanyId { get; set; }
-        public Company? Company { get; set; }
-        public int? CollegeId { get; set; }
-        public College? College { get; set; }
+        public int? AccountId { get; set; }
+        public Account? Account { get; set; } = null!;
 
         // Fields
         public string PhoneNumber { get; set; } = null!;
