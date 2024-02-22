@@ -4,12 +4,20 @@ namespace OneCard.server.Models
 {
     public class Education
     {
+        // Keys
         [Key]
         public int EducationId { get; set; }
 
-        public int UserId { get; set; }
-        public int CollegeId { get; set; }
 
+        // Relationships
+        public int UserId { get; set; }
+        public User User { get; set; } = null!;
+
+        public int CollegeId { get; set; }
+        public College College { get; set; } = null!;
+
+
+        // Fields
         public string? EducationDescription { get; set; }
         public string EducationDegree { get; set; } = null!;
         public string EducationMajor { get; set; } = null!;

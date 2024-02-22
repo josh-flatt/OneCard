@@ -12,9 +12,11 @@ namespace OneCard.server.Models
     }
     public class Phone
     {
+        // Keys
         [Key]
         public int PhoneId { get; set; }
 
+        // Fields
         public string PhoneNumber { get; set; } = null!;
         public PhoneNumberType PhoneNumberType { get; set; }
     }

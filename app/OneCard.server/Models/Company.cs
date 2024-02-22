@@ -4,9 +4,11 @@ namespace OneCard.server.Models
 {
     public class Company
     {
+        // Keys
         [Key]
         public int CompanyId { get; set; }
 
+        // Fields
         public string CompanyName { get; set; } = null!;
         public string? CompanyDescription { get; set; }
         public string CompanyType { get; set; } = null!;

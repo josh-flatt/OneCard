@@ -4,11 +4,32 @@ namespace OneCard.server.Models
 {
     public class User
     {
+        // Keys
         [Key]
         public int UserId { get; set; }
 
-        public int UserCompanyId { get; set; }
 
+        // Relationships
+        public int AccountId { get; set; }
+        public Account Account { get; set; } = null!;
+
+        public int CompanyId { get; set; }
+        public Company Company { get; set; } = null!;
+
+        public int PhoneId { get; set; }
+        public List<Phone> Phones { get; } = [];
+
+        public int CardId { get; set; }
+        public Card Card { get; set; } = null!;
+        
+        public int EducationId { get; set; }
+        public List<Education> Educations { get; } = [];
+
+        public int ResourceId { get; set; }
+        public List<Resource> Resources { get; } = [];
+
+
+        // Fields
         public string UserFirstName { get; set; } = null!;
         public string UserLastName { get; set; } = null!;
         public string UserEmail { get; set; } = null!;
