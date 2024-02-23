@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repositories\\OneCard\\app\\OneCard.server\\OneCard.server.csproj": {}
+    "C:\\repositories\\onecard\\app\\OneCard.server\\OneCard.server.csproj": {}
   },
   "projects": {
-    "C:\\Repositories\\OneCard\\app\\OneCard.server\\OneCard.server.csproj": {
+    "C:\\repositories\\onecard\\app\\OneCard.server\\OneCard.server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repositories\\OneCard\\app\\OneCard.server\\OneCard.server.csproj",
+        "projectUniqueName": "C:\\repositories\\onecard\\app\\OneCard.server\\OneCard.server.csproj",
         "projectName": "OneCard.server",
-        "projectPath": "C:\\Repositories\\OneCard\\app\\OneCard.server\\OneCard.server.csproj",
+        "projectPath": "C:\\repositories\\onecard\\app\\OneCard.server\\OneCard.server.csproj",
         "packagesPath": "C:\\Users\\josh.flatt\\.nuget\\packages\\",
-        "outputPath": "C:\\Repositories\\OneCard\\app\\OneCard.server\\obj\\",
+        "outputPath": "C:\\repositories\\onecard\\app\\OneCard.server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\josh.flatt\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,13 +40,35 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
-              "version": "[1.19.5, )"
+              "version": "[1.19.6, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[6.5.0, )"
             }
           },
           "imports": [
