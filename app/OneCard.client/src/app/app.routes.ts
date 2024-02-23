@@ -10,7 +10,6 @@ export const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: '', redirectTo: '/home', pathMatch: 'full' },
 
-
     //404 Page - must be last path in this array.
     { path: '**', component: PageNotFoundComponent },
 ];
