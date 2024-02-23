@@ -16,7 +16,6 @@ namespace OneCard.server.Models
 
         // Fields
         public decimal BillingPriceModifier { get; set; }
-        public string? BillingInterval { get; set; }
         public DateOnly BillingInitialDate { get; set; }
         public DateOnly? BillingNextDate { get; set; }
         public bool BillingExpired { get; set; }
