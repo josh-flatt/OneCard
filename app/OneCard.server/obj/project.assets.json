@@ -3847,24 +3847,26 @@
     ]
   },
   "packageFolders": {
-    "/home/josh/.nuget/packages/": {}
+    "C:\\Users\\josh.flatt\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/josh/repos/OneCard/app/OneCard.server/OneCard.server.csproj",
+      "projectUniqueName": "C:\\repositories\\Onecard\\app\\OneCard.server\\OneCard.server.csproj",
       "projectName": "OneCard.server",
-      "projectPath": "/home/josh/repos/OneCard/app/OneCard.server/OneCard.server.csproj",
-      "packagesPath": "/home/josh/.nuget/packages/",
-      "outputPath": "/home/josh/repos/OneCard/app/OneCard.server/obj/",
+      "projectPath": "C:\\repositories\\Onecard\\app\\OneCard.server\\OneCard.server.csproj",
+      "packagesPath": "C:\\Users\\josh.flatt\\.nuget\\packages\\",
+      "outputPath": "C:\\repositories\\Onecard\\app\\OneCard.server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/josh/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\josh.flatt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3938,7 +3940,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
