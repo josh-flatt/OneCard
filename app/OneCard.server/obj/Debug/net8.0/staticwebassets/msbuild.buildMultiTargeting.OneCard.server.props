@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\OneCard.server.props" />
-</Project>
