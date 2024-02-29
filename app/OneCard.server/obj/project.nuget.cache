@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "NA2eoDyiNf6Com5yJe/zHdHOUO7DNSJFXh6/gmqze8Lr4YdI8XLFvgHJWJ0QDcqi6qM5BiP3zx19HiIdBNegyA==",
+  "dgSpecHash": "J5+VQ7K2xj5Ac3cJ6eANU2gAGUGOLrEdGRI/KgYAxDnqRZxQ6/WebTsN+Vg54RoGza1YyukcjbyHnifzQj+HRg==",
   "success": true,
-  "projectFilePath": "C:\\repositories\\Onecard\\app\\OneCard.server\\OneCard.server.csproj",
+  "projectFilePath": "C:\\Repositories\\OneCard\\app\\OneCard.server\\OneCard.server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\josh.flatt\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\josh.flatt\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
