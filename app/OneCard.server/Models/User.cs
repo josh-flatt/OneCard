@@ -14,7 +14,7 @@ namespace OneCard.server.Models
         public Account Account { get; set; } = null!;
         public int? CompanyId { get; set; }
         public Company? Company { get; set; } = null!;
-        public int? CardId { get; set; }
+        // public int? CardId { get; set; }
         public Card? Card { get; set; } = null!;
         public List<Education>? Educations { get; } = [];
 
