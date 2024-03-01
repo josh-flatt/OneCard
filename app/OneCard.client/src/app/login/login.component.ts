@@ -1,3 +1,4 @@
+
 import { Component, OnInit, NgZone } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
@@ -12,6 +13,7 @@ import { AuthService } from '../services/auth/auth.service';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
+
 
   constructor(private fb: FormBuilder,
     private router: Router,
