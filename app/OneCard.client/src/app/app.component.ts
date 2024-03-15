@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { LoginComponent } from "./login/login.component";
+import { LogoutComponent } from "./logout/logout.component";
 
 @Component({
   selector: 'app-root',
@@ -11,8 +13,10 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     RouterOutlet,
     RouterLink,
     RouterLinkActive,
-    ToolbarComponent
-  ]
+    ToolbarComponent,
+    LoginComponent,
+    LogoutComponent
+  ],
 })
 export class AppComponent {
   title = 'OneCard.client';

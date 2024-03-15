@@ -1,6 +1,7 @@
-import { Component, NgZone } from '@angular/core';
+import { Component, Inject, NgZone, inject } from '@angular/core';
 import { Router } from '@angular/router';
-import { AuthService } from '../services/auth/auth.service';
+import { AuthService } from '@auth0/auth0-angular';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-logout',
@@ -11,14 +12,16 @@ import { AuthService } from '../services/auth/auth.service';
 })
 export class LogoutComponent {
 
-  constructor(private router: Router,
-    private service: AuthService,
-    private _ngZone: NgZone) { }
+  constructor(
+    @Inject(DOCUMENT) public document: Document,
+    private auth: AuthService
+  ) { }
 
-  public logout() {
-    this.service.signOutExternal();
-    this._ngZone.run(() => {
-      this.router.navigate(['/']).then(() => window.location.reload());
+  logout() {
+    this.auth.logout({
+      logoutParams: {
+        returnTo: this.document.location.origin
+      }
     });
   }
 }
