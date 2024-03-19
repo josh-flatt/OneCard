@@ -16,7 +16,7 @@ export const routes: Routes = [
     { path: 'about-us', component: AboutUsComponent },
 
 
-    //Log In - Log Out
+    //Authentication
     { path: 'login', component: LoginComponent },
     { path: 'logout', component: LogoutComponent },
     { path: 'profile', component: UserProfileComponent },
