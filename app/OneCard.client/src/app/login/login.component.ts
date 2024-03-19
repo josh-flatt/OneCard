@@ -13,7 +13,7 @@ import { AuthService } from '@auth0/auth0-angular';
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
-  constructor(private auth: AuthService) { }
+  constructor(public auth: AuthService) { }
 
   login() {
     this.auth.loginWithRedirect();
