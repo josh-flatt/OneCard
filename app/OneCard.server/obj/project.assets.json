@@ -3847,31 +3847,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\joshm\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/home/josh/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\repositories\\OneCard\\app\\OneCard.server\\OneCard.server.csproj",
+      "projectUniqueName": "/home/josh/repositories/OneCard/app/OneCard.server/OneCard.server.csproj",
       "projectName": "OneCard.server",
-      "projectPath": "C:\\repositories\\OneCard\\app\\OneCard.server\\OneCard.server.csproj",
-      "packagesPath": "C:\\Users\\joshm\\.nuget\\packages\\",
-      "outputPath": "C:\\repositories\\OneCard\\app\\OneCard.server\\obj\\",
+      "projectPath": "/home/josh/repositories/OneCard/app/OneCard.server/OneCard.server.csproj",
+      "packagesPath": "/home/josh/.nuget/packages/",
+      "outputPath": "/home/josh/repositories/OneCard/app/OneCard.server/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\joshm\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/josh/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3940,7 +3933,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.103/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
