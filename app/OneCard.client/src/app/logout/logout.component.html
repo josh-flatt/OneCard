@@ -8,11 +8,16 @@
 </button> -->
 
 <ng-container *ngIf="auth.isAuthenticated$ | async; else loggedOut">
-    <button (click)="auth.logout({ logoutParams: { returnTo: document.location.origin } })">
+    <!-- <button (click)="auth.logout({ logoutParams: { returnTo: document.location.origin } })">
         Log out
+    </button> -->
+    <button class="nav-link" aria-current="page"
+        (click)="auth.logout({ logoutParams: { returnTo: document.location.origin } })" routerLinkActive="activebutton"
+        ariaCurrentWhenActive="page">
+        Log Out
     </button>
 </ng-container>
 
 <ng-template #loggedOut>
-    <button (click)="auth.loginWithRedirect()">Log in</button>
+    <!-- <button (click)="auth.loginWithRedirect()">Log in</button> -->
 </ng-template>
