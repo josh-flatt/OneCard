@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
+import { PackagesComponent } from './packages/packages.component';
 
 export const routes: Routes = [
 
@@ -13,6 +14,7 @@ export const routes: Routes = [
 
     //Other Pages
     { path: 'about-us', component: AboutUsComponent },
+    { path: 'packages', component: PackagesComponent},
 
 
     //Log In - Log Out
