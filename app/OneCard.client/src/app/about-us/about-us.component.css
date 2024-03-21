@@ -1,0 +1,13 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+
+  .centerlogo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
