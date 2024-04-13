@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Editor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #preview {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Profile Editor</h1>
+    <form>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company">
+        </div>
+        <div class="form-group">
+            <label for="education">Education</label>
+            <input type="text" id="education" name="education">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form-group">
+            <label for="bio">Bio</label>
+            <textarea id="bio" name="bio" rows="4"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="profile-pic">Profile Picture</label>
+            <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
+        </div>
+        <button type="button" onclick="previewProfile()">Preview</button>
+    </form>
+
+    <div id="preview"></div>
+
+    <script>
+        function previewProfile() {
+            const name = document.getElementById("name").value;
+            const company = document.getElementById("company").value;
+            const education = document.getElementById("education").value;
+            const email = document.getElementById("email").value;
+            const phone = document.getElementById("phone").value;
+            const bio = document.getElementById("bio").value;
+
+            const preview = document.getElementById("preview");
+            preview.innerHTML = `
+                <h2>${name}</h2>
+                <p>${company}</p>
+                <p>${education}</p>
+                <p>Email: ${email}</p>
+                <p>Phone: ${phone}</p>
+                <p>${bio}</p>
+            `;
+        }
+    </script>
+</body>
+</html>
