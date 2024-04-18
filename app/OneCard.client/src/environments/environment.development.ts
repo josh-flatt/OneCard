@@ -1,6 +1,6 @@
 export const environment = {
     production: false,
-    apiUrl: "https://onecard-cards.com:5182",
+    apiUrl: "https://localhost:7213/api",
     "ssr": false,
     "prerender": false
 };

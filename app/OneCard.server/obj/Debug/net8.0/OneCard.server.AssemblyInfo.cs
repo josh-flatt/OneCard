@@ -10,11 +10,10 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("2b9579b8-ebfa-4c21-9c17-e256db5ec45a")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("OneCard.server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ab5d03bc1fb89e0aa3454ff2e2054a77383f3a14")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e4b4e14c3e7450e2933a6affde2ba96c709f0bdd")]
 [assembly: System.Reflection.AssemblyProductAttribute("OneCard.server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OneCard.server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
