@@ -13,8 +13,16 @@ import { NgIf } from '@angular/common';
     styleUrl: './user-profile.component.css',
     template: `
 <ul *ngIf="this.authService.user$ | async as user">
-      <li>{{ user.name }}</li>
-      <li>{{ user.email }}</li>
+    <li>email: {{ user.email }}</li>
+    <li>email verified: {{ user.email_verified }}</li>
+    <li>family name: {{ user.family_name }}</li>
+    <li>given name: {{ user.given_name }}</li>
+    <li>name: {{ user.name }}</li>
+    <li>nickname: {{ user.nickname }}</li>
+    <li>phone number: {{ user.phone_number }}</li>
+    <li>picture: {{ user.picture }}</li>
+    <li>profile: {{ user.profile }}</li>
+    <li>website: {{ user.website }}</li>
     </ul>
   `
 })
