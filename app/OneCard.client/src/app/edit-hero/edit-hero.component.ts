@@ -18,7 +18,8 @@ import { SuperHeroService } from '../services/super-hero.service';
 export class EditHeroComponent {
 
   @Input() hero?: SuperHero;
-  @Output() heroesUpdated = new EventEmitter<SuperHero[]>();
+  // @Output() heroesUpdated = new EventEmitter<SuperHero[]>();
+  heroes: SuperHero[] = [];
 
   //I cannot for the life of me figure out this issue. Please pick up at 1:08:00 of
   // this youtube video:
@@ -31,19 +32,22 @@ export class EditHeroComponent {
   updateHero(hero: SuperHero) {
     this.superHeroService
       .updateHero(hero)
-      .subscribe((heroes: SuperHero[]) => this.heroesUpdated.emit(heroes));
+      // .subscribe((heroes: SuperHero[]) => this.heroesUpdated.emit(heroes));
+      .subscribe((result: SuperHero[]) => (this.heroes = result))
   }
 
   deleteHero(hero: SuperHero) {
     this.superHeroService
       .deleteHero(hero)
-      .subscribe((heroes: SuperHero[]) => this.heroesUpdated.emit(heroes));
+      // .subscribe((heroes: SuperHero[]) => this.heroesUpdated.emit(heroes));
+      .subscribe((result: SuperHero[]) => (this.heroes = result))
   }
 
   createHero(hero: SuperHero) {
     this.superHeroService
       .createHero(hero)
-      .subscribe((heroes: SuperHero[]) => this.heroesUpdated.emit(heroes));
+      // .subscribe((heroes: SuperHero[]) => this.heroesUpdated.emit(heroes));
+      .subscribe((result: SuperHero[]) => (this.heroes = result))
   }
 
 }

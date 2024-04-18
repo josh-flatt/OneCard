@@ -1,19 +1,24 @@
-<button (click)="initNewHero()">Create new Hero</button>
+<button type="button" class="btn btn-primary" (click)="initNewHero()">Create new Hero</button>
 
-<table>
+<table class="table">
     <thead>
-        <th>Name</th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Place</th>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Place</th>
+            <th scope="col"></th>
+        </tr>
     </thead>
     <tbody>
         <tr *ngFor="let hero of heroes">
+            <th scope="row">{{ hero.id }}</th>
             <td>{{ hero.name }}</td>
             <td>{{ hero.firstName }}</td>
             <td>{{ hero.lastName }}</td>
             <td>{{ hero.place }}</td>
-            <td><button (click)="editHero(hero)">Edit</button></td>
+            <td><button type="button" class="btn btn-secondary" (click)="editHero(hero)">Edit</button></td>
         </tr>
     </tbody>
 </table>
