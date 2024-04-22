@@ -1,0 +1,50 @@
+<div *ngIf="cardUser">
+    <h2>{{ cardUser.firstName }} {{ cardUser.lastName }}</h2>
+    <div class="form-floating mb-3">
+        <input [(ngModel)]="cardUser.firstName" id="heroName" type="text" class="form-control"
+            value="{{ cardUser.firstName }}" />
+        <label for="heroName">First Name</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input [(ngModel)]="cardUser.lastName" id="heroLastName" type="text" class="form-control"
+            value="{{ cardUser.lastName }}" />
+        <label for="heroLastName">Last Name</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input [(ngModel)]="cardUser.email" id="heroFirstName" type="text" class="form-control"
+            value="{{ cardUser.email }}" />
+        <label for="heroFirstName">Email</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input [(ngModel)]="cardUser.username" id="heroFirstName1" type="text" class="form-control"
+            value="{{ cardUserEmail }}" />
+        <label for="heroFirstName1">Username</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input [(ngModel)]="cardUser.description" id="heroPlace3" type="text" class="form-control"
+            value="{{ cardUser.description }}" />
+        <label for="heroPlace3">Description</label>
+    </div>
+
+    <div class="form-floating mb-3">
+        <input [(ngModel)]="cardUser.profilePicture" id="heroPlace33" type="text" class="form-control"
+            value="{{ cardUser.profilePicture }}" />
+        <label for="heroPlace33">Profile Picture</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input [(ngModel)]="cardUser.jobTitle" id="heroPlace" type="text" class="form-control"
+            value="{{ cardUser.jobTitle }}" />
+        <label for="heroPlace">Job Title</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input [(ngModel)]="cardUser.jobDescription" id="heroPlace2" type="text" class="form-control"
+            value="{{ cardUser.jobDescription }}" />
+        <label for="heroPlace2">Job Description</label>
+    </div>
+    <div class="btn-group" role="group" aria-label="Hero Form Control">
+        <button (click)="updateCardUser(cardUser)" class="btn btn-primary" *ngIf="cardUser.id">Save</button>
+        <button (click)="deleteCardUser(cardUser)" class="btn btn-danger" *ngIf=" cardUser.id">Delete</button>
+        <button (click)="createCardUser(cardUser)" *ngIf="!cardUser.id">Create</button>
+    </div>
+</div>
+<p>email: {{ authenticatedUser.email }}</p>

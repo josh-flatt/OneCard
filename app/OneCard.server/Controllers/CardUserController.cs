@@ -23,10 +23,33 @@ namespace OneCard.server.Controllers
             return Ok(await _context.Users.ToListAsync());
         }
 
-        [HttpGet("{userId}")]
-        public async Task<ActionResult<List<User>>> GetCardUser()
+        [HttpGet("id/{userId}")]
+        public async Task<ActionResult<User>> GetCardUserById(int userId)
         {
-            return Ok(await _context.Users.ToListAsync());
+            //int intUserId = Int32.Parse(userId);
+            int intUserId = userId;
+            var dbUser = await _context.Users.FindAsync(intUserId);
+            if (dbUser == null)
+            {
+                return BadRequest("User not found.");
+            }
+            return Ok(dbUser);
+
+        }
+
+        [HttpGet("username/{userUsername}")]
+        public async Task<ActionResult<User>> GetCardUserByUsername(string userUsername)
+        {
+            var dbUsers = await _context.Users.ToListAsync();
+            foreach (var dbUser in dbUsers)
+            {
+                if (dbUser.UserUsername.Contains(userUsername))
+                {
+                    return Ok(dbUser);
+                }
+            }
+            return BadRequest("User not found.");
+
         }
 
 

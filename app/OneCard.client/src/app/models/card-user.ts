@@ -1,5 +1,11 @@
 export class CardUser {
     id?: number;
-    name = "";
+    firstName = "";
+    lastName = "";
     email = "";
+    username = "";
+    description = "";
+    jobTitle = "";
+    jobDescription = "";
+    profilePicture = "";
 }

@@ -26,6 +26,7 @@ export const routes: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'logout', component: LogoutComponent },
     { path: 'profile', component: UserProfileComponent },
+    { path: 'profile/:cardUserId', component: UserProfileComponent },
 
     //404 Page - must be last path in this array.
     { path: '**', component: PageNotFoundComponent },
