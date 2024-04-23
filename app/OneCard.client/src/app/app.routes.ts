@@ -21,9 +21,9 @@ export const routes: Routes = [
     { path: 'packages', component: PackagesComponent },
 
     //Superhero (Testing)
-    { path: 'superhero', component: SuperHeroComponent },
+    // { path: 'superhero', component: SuperHeroComponent },
 
-    // Authentication - temporarily commented out
+    // Authentication and Users
     { path: 'login', component: LoginComponent },
     { path: 'logout', component: LogoutComponent },
     // { path: 'profile', component: UserProfileComponent },
