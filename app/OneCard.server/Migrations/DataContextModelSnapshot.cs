@@ -17,7 +17,7 @@ namespace OneCard.server.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.2")
+                .HasAnnotation("ProductVersion", "8.0.4")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
@@ -292,6 +292,35 @@ namespace OneCard.server.Migrations
                     b.ToTable("Subscriptions");
                 });
 
+            modelBuilder.Entity("OneCard.server.Models.SuperHero", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("Place")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("SuperHeroes");
+                });
+
             modelBuilder.Entity("OneCard.server.Models.User", b =>
                 {
                     b.Property<int>("UserId")
@@ -300,7 +329,7 @@ namespace OneCard.server.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("UserId"));
 
-                    b.Property<int>("AccountId")
+                    b.Property<int?>("AccountId")
                         .HasColumnType("integer");
 
                     b.Property<int?>("CompanyId")
@@ -328,6 +357,9 @@ namespace OneCard.server.Migrations
 
                     b.Property<string>("UserLastName")
                         .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("UserProfilePicture")
                         .HasColumnType("text");
 
                     b.Property<string>("UserUsername")
@@ -437,9 +469,7 @@ namespace OneCard.server.Migrations
                 {
                     b.HasOne("OneCard.server.Models.Account", "Account")
                         .WithOne("User")
-                        .HasForeignKey("OneCard.server.Models.User", "AccountId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("OneCard.server.Models.User", "AccountId");
 
                     b.HasOne("OneCard.server.Models.Company", "Company")
                         .WithMany("Users")

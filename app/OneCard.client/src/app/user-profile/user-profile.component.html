@@ -1,4 +1,52 @@
-<ul *NgIf="this.user$ | async as user">
-    <li>{{ user.name }}</li>
-    <li>{{ user.email }}</li>
-</ul>
+<!-- <ul *ngIf="this.authService.user$ | async as user"> -->
+<!-- <li>email: {{ user.email }}</li>
+    <li>email verified: {{ user.email_verified }}</li>
+    <li>family name: {{ user.family_name }}</li>
+    <li>given name: {{ user.given_name }}</li>
+    <li>name: {{ user.name }}</li>
+    <li>nickname: {{ user.nickname }}</li>
+    <li>phone number: {{ user.phone_number }}</li>
+    <li>picture: {{ user.picture }}</li>
+    <li>profile: {{ user.profile }}</li>
+    <li>website: {{ user.website }}</li> -->
+<!-- <li><button type="button" class="btn btn-secondary" (click)="editCardUser()">Edit</button></li> -->
+<!-- </ul> -->
+<!-- <button type="button" class="btn btn-primary" (click)="editCardUser()">Edit</button>
+<button type="button" class="btn btn-primary" (click)="createCardUser()">Create</button>
+
+<app-edit-user-profile [authenticatedUser]="user" [cardUser]="userToEdit"
+    [showEditPage]="showEditPage"></app-edit-user-profile>
+<app-create-user-profile [authenticatedUser]="user" [showCreatePage]="showCreatePage"></app-create-user-profile> -->
+
+
+<!-- <p>ID {{ cardUser$.userId }} </p>
+<p>First {{ cardUser$.userFirstName }} </p>
+<p>Last {{ cardUser$.userLastName }} </p> -->
+
+<h3>ID</h3>
+<p> {{ cardUser$.userId }} </p>
+<br>
+<h3>First Name</h3>
+<p> {{ cardUser$.userFirstName }} </p>
+<br>
+<h3>Last Name</h3>
+<p> {{ cardUser$.userLastName }} </p>
+<br>
+<h3>Email</h3>
+<p> {{ cardUser$.userEmail }} </p>
+<br>
+<h3>Username</h3>
+<p> {{ cardUser$.userUsername }} </p>
+<br>
+<h3>Description</h3>
+<p> {{ cardUser$.userDescription }} </p>
+<br>
+<h3>Job Title</h3>
+<p> {{ cardUser$.userJobTitle }} </p>
+<br>
+<h3>Job Description</h3>
+<p> {{ cardUser$.userJobDescription }} </p>
+<br>
+<h3>Profile Picture</h3>
+<p> {{ cardUser$.userProfilePicture }} </p>
+<br>

@@ -1,0 +1,26 @@
+<div *ngIf="hero">
+    <h2>{{ hero.name }}</h2>
+    <div class="form-floating mb-3">
+        <input [(ngModel)]="hero.name" id="heroName" type="text" class="form-control" value="{{ hero.name }}" />
+        <label for="heroName">Name</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input [(ngModel)]="hero.firstName" id="heroFirstName" type="text" class="form-control"
+            value="{{ hero.firstName }}" />
+        <label for="heroFirstName">First Name</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input [(ngModel)]="hero.lastName" id="heroLastName" type="text" class="form-control"
+            value="{{ hero.lastName }}" />
+        <label for="heroLastName">Last Name</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input [(ngModel)]="hero.place" id="heroPlace" type="text" class="form-control" value="{{ hero.place }}" />
+        <label for="heroPlace">Place</label>
+    </div>
+    <div class="btn-group" role="group" aria-label="Hero Form Control">
+        <button (click)="updateHero(hero)" class="btn btn-primary" *ngIf="hero.id">Save</button>
+        <button (click)="deleteHero(hero)" class="btn btn-danger" *ngIf=" hero.id">Delete</button>
+        <button (click)="createHero(hero)" *ngIf="!hero.id">Create</button>
+    </div>
+</div>

@@ -7,6 +7,10 @@ namespace OneCard.server.Data
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
+        // Test tables
+        public DbSet<SuperHero> SuperHeroes { get; set; }
+
+        // Prod tables
         public DbSet<Account> Accounts { get; set; }
         public DbSet<Billing> Billings { get; set; }
         public DbSet<Card> Cards { get; set; }

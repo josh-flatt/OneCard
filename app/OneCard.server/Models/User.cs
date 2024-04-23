@@ -10,13 +10,13 @@ namespace OneCard.server.Models
 
 
         // Relationships
-        public int AccountId { get; set; }
-        public Account Account { get; set; } = null!;
-        public int? CompanyId { get; set; }
-        public Company? Company { get; set; } = null!;
+        //public int? AccountId { get; set; }
+        //public Account? Account { get; set; } = null!;
+        //public int? CompanyId { get; set; }
+        //public Company? Company { get; set; } = null!;
         // public int? CardId { get; set; }
-        public Card? Card { get; set; } = null!;
-        public List<Education>? Educations { get; } = [];
+       // public Card? Card { get; set; } = null!;
+        //public List<Education>? Educations { get; } = [];
 
 
         // Fields
@@ -28,5 +28,6 @@ namespace OneCard.server.Models
         public string? UserJobDescription { get; set; } = null!;
         public string UserUsername { get; set; } = null!;
         public string? UserDescription { get; set; } = null!;
+        public string? UserProfilePicture {  get; set; } = null!;
     }
 }

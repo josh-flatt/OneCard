@@ -1,0 +1,21 @@
+<!-- <ul *ngIf="this.authService.user$ | async as user"> -->
+<!-- <li>email: {{ user.email }}</li>
+    <li>email verified: {{ user.email_verified }}</li>
+    <li>family name: {{ user.family_name }}</li>
+    <li>given name: {{ user.given_name }}</li>
+    <li>name: {{ user.name }}</li>
+    <li>nickname: {{ user.nickname }}</li>
+    <li>phone number: {{ user.phone_number }}</li>
+    <li>picture: {{ user.picture }}</li>
+    <li>profile: {{ user.profile }}</li>
+    <li>website: {{ user.website }}</li> -->
+<!-- <li><button type="button" class="btn btn-secondary" (click)="editCardUser()">Edit</button></li> -->
+<!-- </ul> -->
+<div class="btn-group" role="group" aria-label="Hero Form Control">
+    <button type="button" class="btn btn-primary" (click)="editCardUser()">Edit</button>
+    <button type="button" class="btn btn-primary" (click)="createCardUser()">Create</button>
+</div>
+
+<app-edit-user-profile [authenticatedUser]="user" [cardUser]="userToEdit"
+    [showEditPage]="showEditPage"></app-edit-user-profile>
+<app-create-user-profile [authenticatedUser]="user" [showCreatePage]="showCreatePage"></app-create-user-profile>

@@ -5,6 +5,7 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 // import { LogoutComponent } from "./logout/logout.component";
 import { DOCUMENT } from '@angular/common';
 import { AuthService } from '@auth0/auth0-angular';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',

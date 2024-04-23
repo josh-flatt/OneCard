@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\repositories\\OneCard\\app\\OneCard.server\\OneCard.server.csproj": {}
+    "C:\\Repositories\\OneCard\\app\\OneCard.server\\OneCard.server.csproj": {}
   },
   "projects": {
-    "C:\\repositories\\OneCard\\app\\OneCard.server\\OneCard.server.csproj": {
+    "C:\\Repositories\\OneCard\\app\\OneCard.server\\OneCard.server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\repositories\\OneCard\\app\\OneCard.server\\OneCard.server.csproj",
+        "projectUniqueName": "C:\\Repositories\\OneCard\\app\\OneCard.server\\OneCard.server.csproj",
         "projectName": "OneCard.server",
-        "projectPath": "C:\\repositories\\OneCard\\app\\OneCard.server\\OneCard.server.csproj",
+        "projectPath": "C:\\Repositories\\OneCard\\app\\OneCard.server\\OneCard.server.csproj",
         "packagesPath": "C:\\Users\\joshm\\.nuget\\packages\\",
-        "outputPath": "C:\\repositories\\OneCard\\app\\OneCard.server\\obj\\",
+        "outputPath": "C:\\Repositories\\OneCard\\app\\OneCard.server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,23 +44,23 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "EntityFramework": {
-              "target": "Package",
-              "version": "[6.4.4, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.2, )"
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[8.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.4, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.2, )"
-            },
-            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
-              "target": "Package",
-              "version": "[1.19.6, )"
+              "version": "[8.0.4, )"
             },
             "Npgsql": {
               "target": "Package",

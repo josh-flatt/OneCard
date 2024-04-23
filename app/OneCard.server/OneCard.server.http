@@ -1,4 +1,4 @@
-@OneCard.server_HostAddress = http://localhost:5182
+@OneCard.server_HostAddress = http://localhost:5211
 
 GET {{OneCard.server_HostAddress}}/weatherforecast/
 Accept: application/json
