@@ -5,36 +5,37 @@ import { FormsModule } from '@angular/forms';
 import { UserService } from '../services/card-user.service';
 import { AuthService } from '@auth0/auth0-angular';
 
+
 @Component({
-  selector: 'app-edit-user-profile',
+  selector: 'app-create-user-profile',
   standalone: true,
   imports: [
     CommonModule,
     FormsModule
   ],
-  templateUrl: './edit-user-profile.component.html',
-  styleUrl: './edit-user-profile.component.css'
+  templateUrl: './create-user-profile.component.html',
+  styleUrl: './create-user-profile.component.css'
 })
-export class EditUserProfileComponent {
-  @Input() cardUser: CardUser = new CardUser;
+export class CreateUserProfileComponent {
+  @Input() showCreatePage?: boolean;
   @Input() authenticatedUser?: any;
-  @Input() showEditPage?: boolean;
 
-  cardUsers: CardUser = new CardUser;
+  cardUser: CardUser = new CardUser;
 
-  constructor(public authService: AuthService, private cardUserService: UserService) {
-    if (!this.cardUser) {
-      this.cardUser = new CardUser;
-    }
-  }
+  constructor(public authService: AuthService, private cardUserService: UserService) { }
 
   ngOnInit(): void { }
 
-  updateCardUser(cardUser: CardUser) {
-    this.cardUserService
-      .updateCardUser(cardUser)
-      .subscribe((result: CardUser) => (this.cardUsers = result))
-  }
+
+
+
+  cardUsers: CardUser = new CardUser;
+
+  // updateCardUser(cardUser: CardUser) {
+  //   this.cardUserService
+  //     .updateCardUser(cardUser)
+  //     .subscribe((result: CardUser) => (this.cardUsers = result))
+  // }
 
   // deleteCardUser(cardUser: CardUser) {
   //   this.cardUserService
@@ -45,6 +46,6 @@ export class EditUserProfileComponent {
   createCardUser(cardUser: CardUser) {
     this.cardUserService
       .createCardUser(cardUser)
-      .subscribe((result: CardUser) => (this.cardUsers = result))
+      .subscribe((result: CardUser) => (this.cardUser = result))
   }
 }

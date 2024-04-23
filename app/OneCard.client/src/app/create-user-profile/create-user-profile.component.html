@@ -1,4 +1,4 @@
-<div *ngIf="showEditPage">
+<div *ngIf="showCreatePage">
     <div *ngIf="cardUser">
         <h2>{{ cardUser.userFirstName }} {{ cardUser.userLastName }}</h2>
         <div class="form-floating mb-3">
@@ -43,9 +43,9 @@
             <label for="heroPlace2">Job Description</label>
         </div>
         <div class="btn-group" role="group" aria-label="Hero Form Control">
-            <button (click)="updateCardUser(cardUser)" class="btn btn-primary" *ngIf="cardUser.userId">Save</button>
+            <!-- <button (click)="updateCardUser(cardUser)" class="btn btn-primary" *ngIf="cardUser.userId">Save</button> -->
             <!-- <button (click)="deleteCardUser(cardUser)" class="btn btn-danger" *ngIf=" cardUser.userId">Delete</button> -->
-            <!-- <button (click)="createCardUser(cardUser)" *ngIf="!cardUser.userId">Create</button> -->
+            <button (click)="createCardUser(cardUser)" *ngIf="!cardUser.userId">Create</button>
         </div>
     </div>
 

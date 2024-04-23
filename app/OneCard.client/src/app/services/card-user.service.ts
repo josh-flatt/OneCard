@@ -36,15 +36,15 @@ export class UserService {
     );
   }
 
-  public updateCardUser(carduser: CardUser): Observable<CardUser[]> {
-    return this.http.put<CardUser[]>(
+  public updateCardUser(carduser: CardUser): Observable<CardUser> {
+    return this.http.put<CardUser>(
       `${environment.apiUrl}/${this.url}`,
       carduser
     );
   }
 
-  public createCardUser(carduser: CardUser): Observable<CardUser[]> {
-    return this.http.post<CardUser[]>(
+  public createCardUser(carduser: CardUser): Observable<CardUser> {
+    return this.http.post<CardUser>(
       `${environment.apiUrl}/${this.url}`,
       carduser
     );
@@ -52,7 +52,7 @@ export class UserService {
 
   public deleteCardUser(carduser: CardUser): Observable<CardUser[]> {
     return this.http.delete<CardUser[]>(
-      `${environment.apiUrl}/${this.url}/${carduser.id}`
+      `${environment.apiUrl}/${this.url}/${carduser.userId}`
     );
   }
 }

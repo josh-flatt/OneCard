@@ -1,11 +1,12 @@
 export class CardUser {
-    id?: number;
-    firstName = "";
-    lastName = "";
-    email = "";
-    username = "";
-    description = "";
-    jobTitle = "";
-    jobDescription = "";
-    profilePicture = "";
+    userId?: number;
+    userFirstName = "";
+    userLastName = "";
+    userEmail = "";
+    userUsername = "";
+    userDescription = "";
+    userJobTitle = "";
+    userJobDescription = "";
+    userProfilePicture = "";
+    userAddress = "";
 }

@@ -31,7 +31,7 @@ namespace OneCard.server.Controllers
             var dbUser = await _context.Users.FindAsync(intUserId);
             if (dbUser == null)
             {
-                return BadRequest("User not found.");
+                return BadRequest($"User '{userId}' not found.");
             }
             return Ok(dbUser);
 
@@ -48,7 +48,7 @@ namespace OneCard.server.Controllers
                     return Ok(dbUser);
                 }
             }
-            return BadRequest("User not found.");
+            return BadRequest($"User '{userUsername}' not found.");
 
         }
 

@@ -1,5 +1,5 @@
-<!-- <ul *ngIf="this.authService.user$ | async as user">
-    <li>email: {{ user.email }}</li>
+<!-- <ul *ngIf="this.authService.user$ | async as user"> -->
+<!-- <li>email: {{ user.email }}</li>
     <li>email verified: {{ user.email_verified }}</li>
     <li>family name: {{ user.family_name }}</li>
     <li>given name: {{ user.given_name }}</li>
@@ -8,32 +8,17 @@
     <li>phone number: {{ user.phone_number }}</li>
     <li>picture: {{ user.picture }}</li>
     <li>profile: {{ user.profile }}</li>
-    <li>website: {{ user.website }}</li>
-    <li><button type="button" class="btn btn-secondary" (click)="editCardUser()">Edit</button></li>
-</ul>
+    <li>website: {{ user.website }}</li> -->
+<!-- <li><button type="button" class="btn btn-secondary" (click)="editCardUser()">Edit</button></li> -->
+<!-- </ul> -->
+<button type="button" class="btn btn-primary" (click)="editCardUser()">Edit</button>
+<button type="button" class="btn btn-primary" (click)="createCardUser()">Create</button>
+
 <app-edit-user-profile [authenticatedUser]="user" [cardUser]="userToEdit"
-    [cardUserEmail]="userToEditEmail"></app-edit-user-profile> -->
+    [showEditPage]="showEditPage"></app-edit-user-profile>
+<app-create-user-profile [authenticatedUser]="user" [showCreatePage]="showCreatePage"></app-create-user-profile>
 
-<p>{{ this.cardUserId }}</p>
 
-
-<!-- <table class="table">
-    <thead>
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">First Name</th>
-            <th scope="col">Last Name</th>
-            <th scope="col"></th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr *ngFor="let userx of userToView">
-            <th scope="row">{{ userx.id }}</th>
-            <td>{{ userx.firstName }}</td>
-            <td>{{ userx.lastName }}</td>
-        </tr>
-    </tbody>
-</table> -->
-<p>ID {{ userToView.id }} </p>
-<p>First {{ userToView.firstName }} </p>
-<p>Last {{ userToView.lastName }} </p>
+<p>ID {{ cardUser$.userId }} </p>
+<p>First {{ cardUser$.userFirstName }} </p>
+<p>Last {{ cardUser$.userLastName }} </p>
