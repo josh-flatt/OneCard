@@ -11,14 +11,11 @@
     <li>website: {{ user.website }}</li> -->
 <!-- <li><button type="button" class="btn btn-secondary" (click)="editCardUser()">Edit</button></li> -->
 <!-- </ul> -->
-<!-- <button type="button" class="btn btn-primary" (click)="editCardUser()">Edit</button>
-<button type="button" class="btn btn-primary" (click)="createCardUser()">Create</button>
+<div class="btn-group" role="group" aria-label="Hero Form Control">
+    <button type="button" class="btn btn-primary" (click)="editCardUser()">Edit</button>
+    <button type="button" class="btn btn-primary" (click)="createCardUser()">Create</button>
+</div>
 
 <app-edit-user-profile [authenticatedUser]="user" [cardUser]="userToEdit"
     [showEditPage]="showEditPage"></app-edit-user-profile>
-<app-create-user-profile [authenticatedUser]="user" [showCreatePage]="showCreatePage"></app-create-user-profile> -->
-
-
-<p>ID {{ cardUser$.userId }} </p>
-<p>First {{ cardUser$.userFirstName }} </p>
-<p>Last {{ cardUser$.userLastName }} </p>
+<app-create-user-profile [authenticatedUser]="user" [showCreatePage]="showCreatePage"></app-create-user-profile>
