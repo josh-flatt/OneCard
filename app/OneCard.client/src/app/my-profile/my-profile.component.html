@@ -11,8 +11,37 @@
     <li>website: {{ user.website }}</li> -->
 <!-- <li><button type="button" class="btn btn-secondary" (click)="editCardUser()">Edit</button></li> -->
 <!-- </ul> -->
+<section id="dashboardheader">
+    <h1>Welcome to your dashboard!</h1>
+    <div class="dropdown">
+        <button class="dropdown-button">&#9776;</button>
+        <div class="dropdown-content">
+            <a href="#">Profile</a>
+            <a href="#">Settings</a>
+            <a href="#">Logout</a>
+        </div>
+    </div>
+</section>
 
-<!-- <h3>ID</h3>
+<main>
+    <section>
+        <h2>People Who Have Viewed Your Profile</h2>
+        <div class="profile-views">
+            <div class="profile-view">
+                <img src="https://via.placeholder.com/50" alt="Profile Picture">
+                <p>John Doe</p>
+            </div>
+            <div class="profile-view">
+                <img src="https://via.placeholder.com/50" alt="Profile Picture">
+                <p>Jane Smith</p>
+            </div>
+            <div class="profile-view">
+                <img src="https://via.placeholder.com/50" alt="Profile Picture">
+                <p>Bob Johnson</p>
+            </div>
+        </div>
+    </section>
+    <!-- <h3>ID</h3>
 <p> {{ cardUser$.userId }} </p>
 <br>
 <h3>First Name</h3>
@@ -40,11 +69,11 @@
 <p> {{ cardUser$.userProfilePicture }} </p>
 <br> -->
 
-<div class="btn-group" role="group" aria-label="Hero Form Control">
-    <button type="button" class="btn btn-primary" (click)="editCardUser()">Edit</button>
-    <button type="button" class="btn btn-primary" (click)="createCardUser()">Create</button>
-</div>
+    <div class="btn-group" role="group" aria-label="Hero Form Control">
+        <button type="button" class="btn btn-primary" (click)="editCardUser()">Edit</button>
+        <button type="button" class="btn btn-primary" (click)="createCardUser()">Create</button>
+    </div>
 
-<app-edit-user-profile [authenticatedUser]="user" [cardUser]="userToEdit"
-    [showEditPage]="showEditPage"></app-edit-user-profile>
-<app-create-user-profile [authenticatedUser]="user" [showCreatePage]="showCreatePage"></app-create-user-profile>
+    <app-edit-user-profile [authenticatedUser]="user" [cardUser]="userToEdit"
+        [showEditPage]="showEditPage"></app-edit-user-profile>
+    <app-create-user-profile [authenticatedUser]="user" [showCreatePage]="showCreatePage"></app-create-user-profile>
