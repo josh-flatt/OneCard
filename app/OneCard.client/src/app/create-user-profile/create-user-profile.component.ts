@@ -44,6 +44,7 @@ export class CreateUserProfileComponent {
   // }
 
   createCardUser(cardUser: CardUser) {
+    cardUser.userUsername = this.authenticatedUser.email;
     this.cardUserService
       .createCardUser(cardUser)
       .subscribe((result: CardUser) => (this.cardUser = result))

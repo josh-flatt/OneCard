@@ -33,16 +33,18 @@ export class MyProfileComponent implements OnInit {
 
   constructor(public authService: AuthService, private cardUserService: UserService, private route: ActivatedRoute) {
     this.user = {};
-    this.route.params.subscribe(params => {
-      this.cardUserId = params['cardUserId'];
-    });
-  }
-
-  public ngOnInit(): void {
     this.authService.user$.subscribe((success: any) => {
       this.user = success;
       this.userToEditEmail = this.user.email;
     });
+  }
+
+  public ngOnInit(): void {
+    console.log(this.userToEditEmail)
+
+    // this.cardUserService.getCardUserByUsername(this.userToEditEmail).subscribe((data: any) => {
+    //   this.cardUser$ = data;
+    // });
 
     // this.userToView$ = this.cardUserService.getCardUserById(this.cardUserId);
     // this.userToView$.subscribe((data) => {
