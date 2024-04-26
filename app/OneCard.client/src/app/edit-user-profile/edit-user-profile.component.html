@@ -3,7 +3,9 @@
         <h2>{{ cardUser.userFirstName }} {{ cardUser.userLastName }}</h2>
         <h3>ID: {{ cardUser.userId }}</h3>
         <h3>Username: {{ cardUser.userUsername }}</h3>
-        <h4>Your path: <u>https://onecard-cards.com/profile/{{ cardUser.userId }}</u></h4>
+        <h4>Your path: <a
+                href="https://onecard-cards.com/profile/{{ cardUser.userId }}">https://onecard-cards.com/profile/{{
+                cardUser.userId }}</a></h4>
         <div class="form-floating mb-3">
             <input [(ngModel)]="cardUser.userFirstName" id="heroName" type="text" class="form-control"
                 value="{{ cardUser.userFirstName }}" />
@@ -33,7 +35,7 @@
         <div class="form-floating mb-3">
             <input [(ngModel)]="cardUser.userProfilePicture" id="heroPlace33" type="text" class="form-control"
                 value="{{ cardUser.userProfilePicture }}" />
-            <label for="heroPlace33">Profile Picture</label>
+            <label for="heroPlace33">URL to Profile Picture</label>
         </div>
         <div class="form-floating mb-3">
             <input [(ngModel)]="cardUser.userJobTitle" id="heroPlace" type="text" class="form-control"

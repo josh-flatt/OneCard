@@ -23,6 +23,9 @@
 <p>First {{ cardUser$.userFirstName }} </p>
 <p>Last {{ cardUser$.userLastName }} </p> -->
 
+<img src="{{ cardUser$.userProfilePicture }}"
+    alt="Picture of {{ cardUser$.userFirstName }} {{ cardUser$.userLastName }}" />
+
 <h3>ID</h3>
 <p> {{ cardUser$.userId }} </p>
 <br>
@@ -35,9 +38,9 @@
 <h3>Email</h3>
 <p> {{ cardUser$.userEmail }} </p>
 <br>
-<h3>Username</h3>
+<!-- <h3>Username</h3>
 <p> {{ cardUser$.userUsername }} </p>
-<br>
+<br> -->
 <h3>Description</h3>
 <p> {{ cardUser$.userDescription }} </p>
 <br>
@@ -47,6 +50,6 @@
 <h3>Job Description</h3>
 <p> {{ cardUser$.userJobDescription }} </p>
 <br>
-<h3>Profile Picture</h3>
+<!-- <h3>Profile Picture</h3>
 <p> {{ cardUser$.userProfilePicture }} </p>
-<br>
+<br> -->
