@@ -1,0 +1,22 @@
+What is OneCard and how does it work?
+- OneCard is a digital NFC business card platform that allows for seamless contact sharing that is safer for the environment. 
+Is OneCard available for both personal and business use?
+- Yes, OneCard can be used for both Personal and Business use cases to increase networking
+Can I import my existing contacts into OneCard?
+- Unfortunately, at this point our webapp does not support this, but we will have updates soon. 
+What features does OneCard offer for managing contacts?
+- OneCard allows for saving profiles through our OneCard WebApp.
+Is OneCard accessible on all devices and platforms?
+- OneCard is accessible for any device, but works best on phones due to their portability.
+Can I customize my OneCard profile?
+- Yes, OneCard allows for customizing your profile with photos, colors, and other information.
+How can I share my OneCard with others?
+- You can share your profile by having others tap your NFC card, or scan the QR code on the card. 
+Does OneCard offer integration with other productivity tools or platforms?
+- We offer integration with Google Authentication to login, and many plans later on.
+Is OneCard free to use, or are there subscription plans?
+- OneCard is free to use, but we have subscriptions for individuals and corporations, that add many features.
+How often is OneCard updated with new features or improvements?
+- Every week on thursdays after class
+Is OneCard available internationally, or is it limited to certain regions?
+- Our Products support international use
