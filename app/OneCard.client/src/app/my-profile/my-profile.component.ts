@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '@auth0/auth0-angular';
 import { CommonModule } from '@angular/common';
-import { NgIf } from '@angular/common';
 import { EditMyProfileComponent } from "../edit-my-profile/edit-my-profile.component";
 import { CardUser } from '../models/card-user';
 import { UserService } from '../services/card-user.service';
 import { ActivatedRoute } from '@angular/router';
-import { Observable, from } from 'rxjs';
+import { Observable } from 'rxjs';
 import { CreateMyProfileComponent } from "../create-my-profile/create-my-profile.component";
 
 @Component({
