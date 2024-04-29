@@ -12,10 +12,10 @@ import { AuthService } from '@auth0/auth0-angular';
     CommonModule,
     FormsModule
   ],
-  templateUrl: './edit-user-profile.component.html',
-  styleUrl: './edit-user-profile.component.css'
+  templateUrl: './edit-my-profile.component.html',
+  styleUrl: './edit-my-profile.component.css'
 })
-export class EditUserProfileComponent {
+export class EditMyProfileComponent {
   @Input() cardUser: CardUser = new CardUser;
   @Input() authenticatedUser?: any;
   @Input() showEditPage?: boolean;

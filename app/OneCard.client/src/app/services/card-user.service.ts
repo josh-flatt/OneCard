@@ -1,8 +1,6 @@
 import { Injectable } from '@angular/core';
-import { SuperHero } from '../models/super-hero';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-// import { environment } from '../../environments/environment.development';
 import { environment } from '../../environments/environment';
 import { User } from '@auth0/auth0-angular';
 import { CardUser } from '../models/card-user';
