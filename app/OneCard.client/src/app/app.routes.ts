@@ -20,13 +20,10 @@ export const routes: Routes = [
     { path: 'about-us', component: AboutUsComponent },
     { path: 'packages', component: PackagesComponent },
 
-    //Superhero (Testing)
-    // { path: 'superhero', component: SuperHeroComponent },
 
     // Authentication and Users
     { path: 'login', component: LoginComponent },
     { path: 'logout', component: LogoutComponent },
-    // { path: 'profile', component: UserProfileComponent },
     { path: 'profile/:cardUserId', component: UserProfileComponent },
     { path: 'me', component: MyProfileComponent },
 
