@@ -7,7 +7,7 @@ import { CardUser } from '../models/card-user';
 import { UserService } from '../services/card-user.service';
 import { ActivatedRoute } from '@angular/router';
 import { Observable, from } from 'rxjs';
-import { CreateUserProfileComponent } from "../create-user-profile/create-user-profile.component";
+import { CreateMyProfileComponent } from "../create-my-profile/create-my-profile.component";
 
 @Component({
     selector: 'app-user-profile',
@@ -17,7 +17,7 @@ import { CreateUserProfileComponent } from "../create-user-profile/create-user-p
     imports: [
         CommonModule,
         EditMyProfileComponent,
-        CreateUserProfileComponent
+        CreateMyProfileComponent
     ]
 })
 export class UserProfileComponent implements OnInit {

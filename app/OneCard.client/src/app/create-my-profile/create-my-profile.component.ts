@@ -13,10 +13,10 @@ import { AuthService } from '@auth0/auth0-angular';
     CommonModule,
     FormsModule
   ],
-  templateUrl: './create-user-profile.component.html',
-  styleUrl: './create-user-profile.component.css'
+  templateUrl: './create-my-profile.component.html',
+  styleUrl: './create-my-profile.component.css'
 })
-export class CreateUserProfileComponent {
+export class CreateMyProfileComponent {
   @Input() showCreatePage?: boolean;
   @Input() authenticatedUser?: any;
 
