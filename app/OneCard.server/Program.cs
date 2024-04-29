@@ -16,7 +16,7 @@ builder.Services.AddDbContext<DataContext>(options =>
 builder.Services.AddCors(options => options.AddPolicy(name: "SuperHeroOrigins",
     policy =>
     {
-        policy.WithOrigins("http://localhost:4200", "https://onecard-cards.com").AllowAnyMethod().AllowAnyHeader();
+        policy.WithOrigins("http://localhost:4200", "https://onecard-cards.com", "https://onecard-cards.com").AllowAnyMethod().AllowAnyHeader();
     }));
 
 var app = builder.Build();
@@ -30,7 +30,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseCors("SuperHeroOrigins");
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
