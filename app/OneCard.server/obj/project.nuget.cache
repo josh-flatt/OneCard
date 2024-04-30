@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WPuW6rUEKzfACLJY+rkgQtuT8S53y32nQVOI7FVJnQqHLRQC0Gdoq5XNsy26bXZ2FETnYwVZXf7bcBdxM6fSjw==",
+  "dgSpecHash": "WbsQ6+m3u+KUzO/aaVC4HQcr4JQTwJRhvKOhGpLLid9P1pvZ/v201Y7SpVGYoB+qMnd5yGJc03uLyijpu2WzDA==",
   "success": true,
-  "projectFilePath": "C:\\repositories\\OneCard\\app\\OneCard.server\\OneCard.server.csproj",
+  "projectFilePath": "C:\\Repositories\\OneCard\\app\\OneCard.server\\OneCard.server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\josh.flatt\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\josh.flatt\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
