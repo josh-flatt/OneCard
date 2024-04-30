@@ -7,7 +7,6 @@ import { PackagesComponent } from './packages/packages.component';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
-import { SuperHeroComponent } from './super-hero/super-hero.component';
 import { MyProfileComponent } from './my-profile/my-profile.component';
 
 export const routes: Routes = [

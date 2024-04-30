@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '@auth0/auth0-angular';
 import { CommonModule } from '@angular/common';
-import { NgIf } from '@angular/common';
-import { EditUserProfileComponent } from "../edit-user-profile/edit-user-profile.component";
+import { EditMyProfileComponent } from "../edit-my-profile/edit-my-profile.component";
 import { CardUser } from '../models/card-user';
 import { UserService } from '../services/card-user.service';
 import { ActivatedRoute } from '@angular/router';
-import { Observable, from } from 'rxjs';
-import { CreateUserProfileComponent } from "../create-user-profile/create-user-profile.component";
+import { Observable } from 'rxjs';
+import { CreateMyProfileComponent } from "../create-my-profile/create-my-profile.component";
 
 @Component({
   selector: 'app-user-profile',
@@ -16,8 +15,8 @@ import { CreateUserProfileComponent } from "../create-user-profile/create-user-p
   styleUrl: './my-profile.component.css',
   imports: [
     CommonModule,
-    EditUserProfileComponent,
-    CreateUserProfileComponent
+    EditMyProfileComponent,
+    CreateMyProfileComponent
   ]
 })
 export class MyProfileComponent implements OnInit {

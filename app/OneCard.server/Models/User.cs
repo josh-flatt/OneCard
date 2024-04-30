@@ -29,5 +29,6 @@ namespace OneCard.server.Models
         public string UserUsername { get; set; } = null!;
         public string? UserDescription { get; set; } = null!;
         public string? UserProfilePicture {  get; set; } = null!;
+        public string? UserPhoneNumber { get; set; } = null!;
     }
 }

@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '@auth0/auth0-angular';
 import { CommonModule } from '@angular/common';
-import { NgIf } from '@angular/common';
-import { EditUserProfileComponent } from "../edit-user-profile/edit-user-profile.component";
+import { EditMyProfileComponent } from "../edit-my-profile/edit-my-profile.component";
 import { CardUser } from '../models/card-user';
 import { UserService } from '../services/card-user.service';
 import { ActivatedRoute } from '@angular/router';
-import { Observable, from } from 'rxjs';
-import { CreateUserProfileComponent } from "../create-user-profile/create-user-profile.component";
+import { Observable } from 'rxjs';
+import { CreateMyProfileComponent } from "../create-my-profile/create-my-profile.component";
+import { NgxVcardModule, VCard } from 'ngx-vcard';
 
 @Component({
     selector: 'app-user-profile',
@@ -16,8 +16,9 @@ import { CreateUserProfileComponent } from "../create-user-profile/create-user-p
     styleUrl: './user-profile.component.css',
     imports: [
         CommonModule,
-        EditUserProfileComponent,
-        CreateUserProfileComponent
+        EditMyProfileComponent,
+        CreateMyProfileComponent,
+        NgxVcardModule
     ]
 })
 export class UserProfileComponent implements OnInit {
@@ -30,6 +31,7 @@ export class UserProfileComponent implements OnInit {
     userToView$?: Observable<any>;
     showEditPage: boolean = false;
     showCreatePage: boolean = false;
+    public vCard: VCard = {};
 
     constructor(public authService: AuthService, private cardUserService: UserService, private route: ActivatedRoute) {
         this.user = {};
@@ -47,6 +49,21 @@ export class UserProfileComponent implements OnInit {
         this.userToView$ = this.cardUserService.getCardUserById(this.cardUserId);
         this.userToView$.subscribe((data) => {
             this.cardUser$ = data;
+            this.vCard = {
+                name: {
+                    firstNames: this.cardUser$.userFirstName,
+                    lastNames: this.cardUser$.userLastName,
+                },
+                kind: "individual",
+                photo: this.cardUser$.userProfilePicture,
+                email: [
+                    this.cardUser$.userEmail,
+                ],
+                title: this.cardUser$.userJobTitle,
+                telephone: [
+                    this.cardUser$.userPhoneNumber,
+                ]
+            };
         });
     }
 
@@ -76,4 +93,13 @@ export class UserProfileComponent implements OnInit {
     getCardUserById() {
         return this.cardUserService.getCardUserById(this.cardUserId);
     }
+
+
+
+    public generateVCardOnTheFly = (): VCard => {
+        // TODO: Generate the VCard before Download
+        return {
+            name: { firstNames: "John", lastNames: "Doe", addtionalNames: "Auto" },
+        };
+    };
 }

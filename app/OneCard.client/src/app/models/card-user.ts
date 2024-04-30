@@ -9,4 +9,5 @@ export class CardUser {
     userJobDescription = "";
     userProfilePicture = "";
     userAddress = "";
+    userPhoneNumber = "";
 }
