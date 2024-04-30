@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repositories\\OneCard\\app\\OneCard.server\\OneCard.server.csproj": {}
+    "C:\\repositories\\OneCard\\app\\OneCard.server\\OneCard.server.csproj": {}
   },
   "projects": {
-    "C:\\Repositories\\OneCard\\app\\OneCard.server\\OneCard.server.csproj": {
+    "C:\\repositories\\OneCard\\app\\OneCard.server\\OneCard.server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repositories\\OneCard\\app\\OneCard.server\\OneCard.server.csproj",
+        "projectUniqueName": "C:\\repositories\\OneCard\\app\\OneCard.server\\OneCard.server.csproj",
         "projectName": "OneCard.server",
-        "projectPath": "C:\\Repositories\\OneCard\\app\\OneCard.server\\OneCard.server.csproj",
+        "projectPath": "C:\\repositories\\OneCard\\app\\OneCard.server\\OneCard.server.csproj",
         "packagesPath": "C:\\Users\\josh.flatt\\.nuget\\packages\\",
-        "outputPath": "C:\\Repositories\\OneCard\\app\\OneCard.server\\obj\\",
+        "outputPath": "C:\\repositories\\OneCard\\app\\OneCard.server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\josh.flatt\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -34,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
