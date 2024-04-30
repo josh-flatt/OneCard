@@ -7,6 +7,7 @@ import { UserService } from '../services/card-user.service';
 import { ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs';
 import { CreateMyProfileComponent } from "../create-my-profile/create-my-profile.component";
+import { NgxVcardModule, VCard } from 'ngx-vcard';
 
 @Component({
     selector: 'app-user-profile',
@@ -16,7 +17,8 @@ import { CreateMyProfileComponent } from "../create-my-profile/create-my-profile
     imports: [
         CommonModule,
         EditMyProfileComponent,
-        CreateMyProfileComponent
+        CreateMyProfileComponent,
+        NgxVcardModule
     ]
 })
 export class UserProfileComponent implements OnInit {
@@ -29,6 +31,7 @@ export class UserProfileComponent implements OnInit {
     userToView$?: Observable<any>;
     showEditPage: boolean = false;
     showCreatePage: boolean = false;
+    public vCard: VCard = {};
 
     constructor(public authService: AuthService, private cardUserService: UserService, private route: ActivatedRoute) {
         this.user = {};
@@ -46,6 +49,21 @@ export class UserProfileComponent implements OnInit {
         this.userToView$ = this.cardUserService.getCardUserById(this.cardUserId);
         this.userToView$.subscribe((data) => {
             this.cardUser$ = data;
+            this.vCard = {
+                name: {
+                    firstNames: this.cardUser$.userFirstName,
+                    lastNames: this.cardUser$.userLastName,
+                },
+                kind: "individual",
+                photo: this.cardUser$.userProfilePicture,
+                email: [
+                    this.cardUser$.userEmail,
+                ],
+                title: this.cardUser$.userJobTitle,
+                telephone: [
+                    this.cardUser$.userPhoneNumber,
+                ]
+            };
         });
     }
 
@@ -75,4 +93,13 @@ export class UserProfileComponent implements OnInit {
     getCardUserById() {
         return this.cardUserService.getCardUserById(this.cardUserId);
     }
+
+
+
+    public generateVCardOnTheFly = (): VCard => {
+        // TODO: Generate the VCard before Download
+        return {
+            name: { firstNames: "John", lastNames: "Doe", addtionalNames: "Auto" },
+        };
+    };
 }

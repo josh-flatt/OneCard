@@ -82,6 +82,7 @@ namespace OneCard.server.Controllers
             dbUser.UserJobDescription = user.UserJobDescription;
             dbUser.UserDescription = user.UserDescription;
             dbUser.UserProfilePicture = user.UserProfilePicture;
+            dbUser.UserPhoneNumber = user.UserPhoneNumber;
 
             await _context.SaveChangesAsync();
 

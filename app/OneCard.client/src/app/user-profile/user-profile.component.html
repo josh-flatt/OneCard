@@ -26,6 +26,10 @@
 <img src="{{ cardUser$.userProfilePicture }}"
     alt="Picture of {{ cardUser$.userFirstName }} {{ cardUser$.userLastName }}" />
 
+<button id="downloadButtonNormal" [vcdDownloadVCard]="vCard">
+    Download VCard!
+</button>
+
 <h3>ID</h3>
 <p> {{ cardUser$.userId }} </p>
 <br>
