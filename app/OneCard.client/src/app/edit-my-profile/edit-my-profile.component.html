@@ -27,6 +27,26 @@
             <label for="heroFirstName1">Phone Number</label>
         </div>
         <div class="form-floating mb-3">
+            <input [(ngModel)]="cardUser.userStreetAddress" id="heroPlace7" type="text" class="form-control"
+                value="{{ cardUser.userStreetAddress }}" />
+            <label for="heroPlace7">Street Address</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input [(ngModel)]="cardUser.userCity" id="heroPlace8" type="text" class="form-control"
+                value="{{ cardUser.userCity }}" />
+            <label for="heroPlace8">City</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input [(ngModel)]="cardUser.userProvince" id="heroPlace9" type="text" class="form-control"
+                value="{{ cardUser.userProvince }}" />
+            <label for="heroPlace9">State or Province</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input [(ngModel)]="cardUser.userZipCode" id="heroPlace10" type="text" class="form-control"
+                value="{{ cardUser.userZipCode }}" />
+            <label for="heroPlace10">Zip or Postal Code</label>
+        </div>
+        <div class="form-floating mb-3">
             <input [(ngModel)]="cardUser.userDescription" id="heroPlace3" type="text" class="form-control"
                 value="{{ cardUser.userDescription }}" />
             <label for="heroPlace3">Description</label>

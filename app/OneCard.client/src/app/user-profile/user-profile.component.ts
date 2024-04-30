@@ -62,7 +62,21 @@ export class UserProfileComponent implements OnInit {
                 title: this.cardUser$.userJobTitle,
                 telephone: [
                     this.cardUser$.userPhoneNumber,
-                ]
+                ],
+                address: [
+                    {
+                        street: this.cardUser$.userStreetAddress,
+                    },
+                    {
+                        locality: this.cardUser$.userCity,
+                    },
+                    {
+                        region: this.cardUser$.userProvince,
+                    },
+                    {
+                        postalCode: this.cardUser$.userZipCode,
+                    },
+                ],
             };
         });
     }

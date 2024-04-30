@@ -1,28 +1,4 @@
-<!-- <ul *ngIf="this.authService.user$ | async as user"> -->
-<!-- <li>email: {{ user.email }}</li>
-    <li>email verified: {{ user.email_verified }}</li>
-    <li>family name: {{ user.family_name }}</li>
-    <li>given name: {{ user.given_name }}</li>
-    <li>name: {{ user.name }}</li>
-    <li>nickname: {{ user.nickname }}</li>
-    <li>phone number: {{ user.phone_number }}</li>
-    <li>picture: {{ user.picture }}</li>
-    <li>profile: {{ user.profile }}</li>
-    <li>website: {{ user.website }}</li> -->
-<!-- <li><button type="button" class="btn btn-secondary" (click)="editCardUser()">Edit</button></li> -->
-<!-- </ul> -->
-<!-- <button type="button" class="btn btn-primary" (click)="editCardUser()">Edit</button>
-<button type="button" class="btn btn-primary" (click)="createCardUser()">Create</button>
-
-<app-edit-user-profile [authenticatedUser]="user" [cardUser]="userToEdit"
-    [showEditPage]="showEditPage"></app-edit-user-profile>
-<app-create-user-profile [authenticatedUser]="user" [showCreatePage]="showCreatePage"></app-create-user-profile> -->
-
-
-<!-- <p>ID {{ cardUser$.userId }} </p>
-<p>First {{ cardUser$.userFirstName }} </p>
-<p>Last {{ cardUser$.userLastName }} </p> -->
-
+<!-- 
 <img src="{{ cardUser$.userProfilePicture }}"
     alt="Picture of {{ cardUser$.userFirstName }} {{ cardUser$.userLastName }}" />
 
@@ -42,9 +18,9 @@
 <h3>Email</h3>
 <p> {{ cardUser$.userEmail }} </p>
 <br>
-<!-- <h3>Username</h3>
-<p> {{ cardUser$.userUsername }} </p>
-<br> -->
+<h3>Username</h3>
+<p> {{ cardUser$.userPhoneNumber }} </p>
+<br>
 <h3>Description</h3>
 <p> {{ cardUser$.userDescription }} </p>
 <br>
@@ -53,7 +29,24 @@
 <br>
 <h3>Job Description</h3>
 <p> {{ cardUser$.userJobDescription }} </p>
-<br>
-<!-- <h3>Profile Picture</h3>
-<p> {{ cardUser$.userProfilePicture }} </p>
-<br> -->
+<br> 
+-->
+<div class="card mx-auto" style="width: 20rem;">
+    <img src="{{ cardUser$.userProfilePicture }}" class="card-img-top"
+        alt="Picture of {{ cardUser$.userFirstName }} {{ cardUser$.userLastName }}">
+    <div class="card-body">
+        <h5 class="card-title">{{ cardUser$.userFirstName }} {{ cardUser$.userLastName }}</h5>
+        <p class="card-text">{{ cardUser$.userJobTitle }}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Phone: {{ cardUser$.userPhoneNumber }}</li>
+        <li class="list-group-item">Email: {{ cardUser$.userEmail }}</li>
+        <li class="list-group-item">Address: {{ cardUser$.userStreetAddress }}, {{ cardUser$.userCity}}, {{
+            cardUser$.userProvince }} {{ cardUser$.userZipCode }}</li>
+    </ul>
+    <div class="card-body mx-auto">
+        <button class="btn btn-primary" id="downloadButtonNormal" [vcdDownloadVCard]="vCard">
+            Save to Contacts
+        </button>
+    </div>
+</div>

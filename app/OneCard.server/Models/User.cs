@@ -15,7 +15,7 @@ namespace OneCard.server.Models
         //public int? CompanyId { get; set; }
         //public Company? Company { get; set; } = null!;
         // public int? CardId { get; set; }
-       // public Card? Card { get; set; } = null!;
+        // public Card? Card { get; set; } = null!;
         //public List<Education>? Educations { get; } = [];
 
 
@@ -23,12 +23,15 @@ namespace OneCard.server.Models
         public string UserFirstName { get; set; } = null!;
         public string UserLastName { get; set; } = null!;
         public string UserEmail { get; set; } = null!;
-        public string? UserAddress { get; set; } = null!;
+        public string? UserStreetAddress { get; set; } = null!;
+        public string? UserCity { get; set; } = null!;
+        public string? UserProvince { get; set; } = null!;
+        public string? UserZipCode { get; set; } = null!;
         public string? UserJobTitle { get; set; } = null!;
         public string? UserJobDescription { get; set; } = null!;
         public string UserUsername { get; set; } = null!;
         public string? UserDescription { get; set; } = null!;
-        public string? UserProfilePicture {  get; set; } = null!;
+        public string? UserProfilePicture { get; set; } = null!;
         public string? UserPhoneNumber { get; set; } = null!;
     }
 }

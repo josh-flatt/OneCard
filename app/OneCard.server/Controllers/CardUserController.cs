@@ -75,9 +75,11 @@ namespace OneCard.server.Controllers
             dbUser.UserFirstName = user.UserFirstName;
             dbUser.UserLastName = user.UserLastName;
             dbUser.UserEmail = user.UserEmail;
-            dbUser.UserAddress = user.UserAddress;
+            dbUser.UserStreetAddress = user.UserStreetAddress;
+            dbUser.UserCity = user.UserCity;
+            dbUser.UserProvince = user.UserProvince;
+            dbUser.UserZipCode = user.UserZipCode;
             dbUser.UserUsername = user.UserUsername;
-            dbUser.UserAddress = user.UserAddress;
             dbUser.UserJobTitle = user.UserJobTitle;
             dbUser.UserJobDescription = user.UserJobDescription;
             dbUser.UserDescription = user.UserDescription;
